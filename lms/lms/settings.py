@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'lms.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'lms',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'mibasededatos',
+        'USER': 'velocidad',
+        'PASSWORD': 'password',
+        'HOST': '',
+        'PORT': '',
     }
 }
 
