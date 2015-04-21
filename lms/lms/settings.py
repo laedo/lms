@@ -15,7 +15,6 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
@@ -37,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'courses',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'lms.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'mibasededatos',
-        'USER': 'velocidad',
-        'PASSWORD': 'password',
-        'HOST': '',
-        'PORT': '',
+        'NAME': 'lms',
+        'USER': 'postgres',
+        'PASSWORD': 'seba3132866',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
